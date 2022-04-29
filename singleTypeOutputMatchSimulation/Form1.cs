@@ -14,13 +14,18 @@ namespace singleTypeOutputMatchSimulation
     {
         public class InnerVariable
         {
-            private double _value=0;
+            private double _value = 0;
             //private string _name;
 
             //public InnerVariable(string name)
             //{ 
             //    this._name = name;
             //}
+
+            public InnerVariable(double value)
+            {
+                this._value = value;
+            }
 
             public double dValue
             {
@@ -43,7 +48,7 @@ namespace singleTypeOutputMatchSimulation
             //}
         }
 
-        
+
         //void EventChangingByInnerVariable(object sender, EventArgs eventArgs)
         //{
         //    Console.WriteLine("aa");
@@ -83,7 +88,10 @@ namespace singleTypeOutputMatchSimulation
 
         //    }
         //}
-
+        /// <summary>
+        ///     Initial setting 
+        /// </summary>
+        #region
         double _dFrequency = 0;  // To verify that the input value is a real value
         double _dPower = 0; // To verify that the input value is a real value
         double _dL1 = 0; // To verify that the input value is a real value
@@ -94,21 +102,21 @@ namespace singleTypeOutputMatchSimulation
         Queue<string> _QueueCalList = new Queue<string>();
 
 
-        InnerVariable _CalculatedC1 = new InnerVariable();
-        InnerVariable _CalculatedXc1 = new InnerVariable();
-        InnerVariable _CalculatedXl1 = new InnerVariable();
-        InnerVariable _Xc1PlusXl1 = new InnerVariable();
+        InnerVariable _CalculatedC1 = new InnerVariable(0);
+        InnerVariable _CalculatedXc1 = new InnerVariable(0);
+        InnerVariable _CalculatedXl1 = new InnerVariable(0);
+        InnerVariable _Xc1PlusXl1 = new InnerVariable(0);
 
-        InnerVariable _CalculatedC2 = new InnerVariable();
-        InnerVariable _CalculatedXc2 = new InnerVariable();
-        InnerVariable _CalculatedTotalC2 = new InnerVariable();
-        InnerVariable _CalculatedTotalXc2 = new InnerVariable();
-        InnerVariable _CalculatedXl2 = new InnerVariable();
+        InnerVariable _CalculatedC2 = new InnerVariable(0);
+        InnerVariable _CalculatedXc2 = new InnerVariable(0);
+        InnerVariable _CalculatedTotalC2 = new InnerVariable(0);
+        InnerVariable _CalculatedTotalXc2 = new InnerVariable(0);
+        InnerVariable _CalculatedXl2 = new InnerVariable(0);
 
-        InnerVariable _Vpeak = new InnerVariable();
-        InnerVariable _Irms = new InnerVariable();
+        InnerVariable _Vpeak = new InnerVariable(0);
+        InnerVariable _Irms = new InnerVariable(0);
 
-        InnerVariable _TotalLoadX = new InnerVariable();
+        InnerVariable _TotalLoadX = new InnerVariable(0);
 
         List<string> _lSourceVrms = new List<string> { "dPower" };
         List<string> _lSourceIrms = new List<string> { "dPower" };
@@ -138,7 +146,7 @@ namespace singleTypeOutputMatchSimulation
         List<string> _lIrms = new List<string> { "dPower", "dR" };//
 
         List<string> _lTotalLoadX = new List<string> { "CalculatedXl2", "dX" };//
-
+        #endregion
 
         public void fSearchingParamInFomula()
         {
@@ -151,33 +159,33 @@ namespace singleTypeOutputMatchSimulation
                 if (_lSourceVrms.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("SourceVrms");
                 }
-                //if (_lSourceIrms.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lC1Vpeak.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lC1Irms.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lL1Vpeak.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lL1Irms.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lC2Vpeak.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
+                if (_lSourceIrms.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("SourceIrms");
+                }
+                if (_lC1Vpeak.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("C1Vpeak");
+                }
+                if (_lC1Irms.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("C1Irms");
+                }
+                if (_lL1Vpeak.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("L1Vpeak");
+                }
+                if (_lL1Irms.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("L1Irms");
+                }
+                if (_lC2Vpeak.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("C2Vpeak");
+                }
                 if (_lC2Irms.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("C2Irms");
                 }
-                //if (_lL2Vpeak.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
-                //if (_lL2Irms.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
+                if (_lL2Vpeak.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("L2Vpeak");
+                }
+                if (_lL2Irms.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("L2Irms");
+                }
                 if (_lCalculatedC1.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("CalculatedC1");
                 }
@@ -187,16 +195,15 @@ namespace singleTypeOutputMatchSimulation
                 if (_lCalculatedXl1.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("CalculatedXl1");
                 }
-                if (_lXc1PlusXl1.Contains(sQueueFrontMostElement))
-                {
+                if (_lXc1PlusXl1.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("Xc1PlusXl1");
                 }
                 if (_lCalculatedC2.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("CalculatedC2");
                 }
-                //if (_lCalculatedXc2.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
+                if (_lCalculatedXc2.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("CalculatedXc2");
+                }
                 if (_lCalculatedTotalC2.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("CalculatedTotalC2");
                 }
@@ -206,9 +213,9 @@ namespace singleTypeOutputMatchSimulation
                 if (_lCalculatedXl2.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("CalculatedXl2");
                 }
-                //if (_lVpeak.Contains(sQueueFrontMostElement)){
-                //    _QueueCalList.Enqueue("SourceVrms");
-                //}
+                if (_lVpeak.Contains(sQueueFrontMostElement)){
+                    _QueueCalList.Enqueue("Vpeak");
+                }
                 if (_lIrms.Contains(sQueueFrontMostElement)){
                     _QueueCalList.Enqueue("Irms");
                 }
@@ -226,13 +233,6 @@ namespace singleTypeOutputMatchSimulation
             value = Math.Round(value,2);
             return value.ToString(); 
         }
-
-        public Double fMathRoundToDouble(double value)
-        {
-            value = Math.Round(value, 2);
-            return value;
-        }
-
 
         public void fParameterValueReset(string sQueueFrontMostElement)
         {
@@ -253,7 +253,7 @@ namespace singleTypeOutputMatchSimulation
                     lbl_sourceCurrent.Text = fMathRoundToString(Math.Sqrt(double.Parse(tBox_power.Text) / 50));
                     break;
                 case "C1Vpeak":
-                    lbl_C1Voltage.Text = fMathRoundToString(Math.Sqrt(2)*double.Parse(lbl_sourceVoltage.Text)*(_Xc1PlusXl1.dValue / (_Xc1PlusXl1.dValue-_CalculatedXl1.dValue)));
+                    lbl_C1Voltage.Text = fMathRoundToString(Math.Sqrt(2)*double.Parse(lbl_sourceVoltage.Text)*(_Xc1PlusXl1.dValue / (_Xc1PlusXl1.dValue - _CalculatedXl1.dValue)));
                     break;
                 case "C1Irms":
                     lbl_C1Current.Text = fMathRoundToString(double.Parse(lbl_sourceVoltage.Text)/(_Xc1PlusXl1.dValue - _CalculatedXl1.dValue));
@@ -266,7 +266,7 @@ namespace singleTypeOutputMatchSimulation
                     break;
 
                 case "C2Vpeak":
-                    lbl_C2Voltage.Text = fMathRoundToString(Math.Sqrt(2)* double.Parse(lbl_C2Voltage.Text)*_CalculatedTotalXc2.dValue);
+                    lbl_C2Voltage.Text = fMathRoundToString(Math.Sqrt(2)* double.Parse(lbl_C2Current.Text)*_CalculatedTotalXc2.dValue);
                     break;
                 case "C2Irms":
                     lbl_C2Current.Text = fMathRoundToString(_Irms.dValue);
@@ -279,57 +279,66 @@ namespace singleTypeOutputMatchSimulation
                     break;
 
                 case "CalculatedC1":
-                    _CalculatedC1.dValue = fMathRoundToDouble( Math.Pow(10, 12) * (1 / (50 * 2 * Math.PI * dfrequency * Math.Pow(10, 6)) * Math.Sqrt((50 - dResistor) / dResistor)));
+                    _CalculatedC1.dValue = Math.Pow(10, 12) * (1 / (50 * 2 * Math.PI * dfrequency * Math.Pow(10, 6)) * Math.Sqrt((50 - dResistor) / dResistor));
+                    lbl_C1.Text = fMathRoundToString(_CalculatedC1.dValue);
                     break;
                 case "CalculatedXc1":
-                    _CalculatedXc1.dValue = fMathRoundToDouble(1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedC1.dValue * Math.Pow(10, -12)));
+                    _CalculatedXc1.dValue = 1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedC1.dValue * Math.Pow(10, -12));
                     break;
                case "CalculatedXl1":
-                    _CalculatedXl1.dValue = fMathRoundToDouble(2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L1.Text) * Math.Pow(10, -6));
+                    _CalculatedXl1.dValue = 2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L1.Text) * Math.Pow(10, -6);
                     break;
                 case "Xc1PlusXl1":
-                    _Xc1PlusXl1.dValue = fMathRoundToDouble(_CalculatedXc1.dValue+_CalculatedXl1.dValue);
+                    _Xc1PlusXl1.dValue = _CalculatedXc1.dValue+_CalculatedXl1.dValue;
                     break;
 
                 case "CalculatedC2":
-                    _CalculatedC2.dValue = fMathRoundToDouble(Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (dReactance - Math.Sqrt((dResistor * (50 - dResistor)))))));
+                    _CalculatedC2.dValue = Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (dReactance - Math.Sqrt((dResistor * (50 - dResistor))))));
+                    lbl_C2.Text = fMathRoundToString(_CalculatedC2.dValue);
                     break;
                 case "CalculatedXc2":
-                    _CalculatedXc2.dValue = fMathRoundToDouble(1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedC2.dValue * Math.Pow(10, -12)));
+                    _CalculatedXc2.dValue = 1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedC2.dValue * Math.Pow(10, -12));
                     break;
                 case "CalculatedTotalC2":
-                    _CalculatedTotalC2.dValue = fMathRoundToDouble(Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (_TotalLoadX.dValue - Math.Sqrt((dResistor * (50 - dResistor))))))); 
+                    _CalculatedTotalC2.dValue = Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (_TotalLoadX.dValue - Math.Sqrt((dResistor * (50 - dResistor)))))); 
                     break;
                 case "CalculatedTotalXc2":
-                    _CalculatedTotalXc2.dValue = fMathRoundToDouble(1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedTotalC2.dValue * Math.Pow(10, -12)));
+                    _CalculatedTotalXc2.dValue = 1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedTotalC2.dValue * Math.Pow(10, -12));
+
+                    if (_CalculatedTotalXc2.dValue >= 0) 
+                    {
+                        lbl_C2Status.Text = "C2 [pF] - explicit solution";
+                        lbl_C2Status.BackColor = Color.Turquoise;
+                    }
+                    else 
+                    {
+                        lbl_C2Status.Text = "C2 [pF] - No explicit solution exists. You should add on L2 inductance level";
+                        lbl_C2Status.BackColor = Color.Tomato;
+                    }
+
                     break;
                 case "CalculatedXl2":
-                    _CalculatedXl2.dValue = fMathRoundToDouble(2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L2.Text) * Math.Pow(10, -6));
+                    _CalculatedXl2.dValue = 2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L2.Text) * Math.Pow(10, -6);
                     break;
 
                 case "Vpeak":
-                    _Vpeak.dValue = fMathRoundToDouble(Math.Sqrt(2) * Math.Sqrt(dPower * (Math.Pow(dResistor, 2) + Math.Pow(dReactance, 2)) / dResistor));
+                    _Vpeak.dValue = Math.Sqrt(2) * Math.Sqrt(dPower * (Math.Pow(dResistor, 2) + Math.Pow(dReactance, 2)) / dResistor);
                     break;
                 case "Irms":
-                    _Irms.dValue = fMathRoundToDouble(Math.Sqrt(double.Parse(tBox_power.Text) / dResistor));
+                    _Irms.dValue = Math.Sqrt(double.Parse(tBox_power.Text) / dResistor);
                     break;
 
                 case "TotalLoadX":
-                    _TotalLoadX.dValue = fMathRoundToDouble(_CalculatedXl2.dValue + dReactance);
+                    _TotalLoadX.dValue = _CalculatedXl2.dValue + dReactance;
                     break;
 
             }
         }
-            public Form1()
+        public Form1()
         {
             InitializeComponent();
-            //CalculatedC1.EventHandlerChangeByInnerVariable += new EventHandler(EventChangingByInnerVariable);
-            //tBox_frequency.Text = "0";
-            //tBox_power.Text = "0";
-            //tBox_L1.Text = "0";
-            //tBox_L2.Text = "0";
-            //tBox_resistor.Text = "0";
-            //tBox_reactance.Text = "0";
+            lbl_C2Status.Text = "C2 [pF] - No explicit solution exists. You should add on L2 inductance level";
+            lbl_C2Status.BackColor = Color.Tomato;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -345,23 +354,7 @@ namespace singleTypeOutputMatchSimulation
                 // When, input value is a real value
                 tBox_frequency.Text = tBox_frequency.Text;
 
-                //double dfrequency = double.Parse(tBox_frequency.Text);
-                //double dPower = double.Parse(tBox_power.Text);
-                //double dResistor = double.Parse(tBox_resistor.Text);
-                //double dReactance = double.Parse(tBox_reactance.Text);
-                //_CalculatedC1.dValue = Math.Pow(10,12)*(1/(50*2*Math.PI*dfrequency*Math.Pow(10,6))*Math.Sqrt((50-dResistor)/dResistor));
-                //_CalculatedXc1.dValue = 1/(2*Math.PI*dfrequency*Math.Pow(10,6)*_CalculatedC1.dValue*Math.Pow(10,-12));
-                //_CalculatedXl1.dValue = 2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L1.Text) * Math.Pow(10, -6);
-                //_CalculatedTotalC2.dValue = Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (_TotalLoadX.dValue - Math.Sqrt((dResistor * (50 - dResistor)))))); ;
-                //_CalculatedC2.dValue = Math.Pow(10, 12) * (1 / ((2 * Math.PI * dfrequency * Math.Pow(10, 6)) * (dReactance - Math.Sqrt((dResistor * (50 - dResistor))))));
-                //_CalculatedXc2.dValue = 1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedC2.dValue * Math.Pow(10, -12));
-                //_CalculatedTotalXc2.dValue = 1 / (2 * Math.PI * dfrequency * Math.Pow(10, 6) * _CalculatedTotalC2.dValue * Math.Pow(10, -12));
-                //_CalculatedXl2.dValue = 2 * Math.PI * dfrequency * Math.Pow(10, 6) * double.Parse(tBox_L2.Text) * Math.Pow(10, -6);
-
-                //lbl_C1.Text = Math.Round((Math.Pow(10,12)*(1/(2*Math.PI*dfrequency*Math.Pow(10,6)*_CalculatedC1.dValue))),2).ToString();
-
-                //fParameterValueReset("CalculatedC1");
-                _QueueCalList.Enqueue("dfrequency");
+                _QueueCalList.Enqueue("dFrequency");
                 fSearchingParamInFomula();
             }
             else if (tBox_frequency.Text.EndsWith("."))
@@ -381,14 +374,6 @@ namespace singleTypeOutputMatchSimulation
             {
                 tBox_power.Text = tBox_power.Text;
 
-                //lbl_sourceVoltage.Text = Math.Round(Math.Sqrt(50 * double.Parse(tBox_power.Text)),2).ToString();
-                //lbl_sourceCurrent.Text = Math.Round(Math.Sqrt(double.Parse(tBox_power.Text)/50),2).ToString();
-
-                //double dPower = double.Parse(tBox_power.Text);
-                //double dResistor = double.Parse(tBox_resistor.Text);
-                //double dReactance = double.Parse(tBox_reactance.Text);
-                //_Vpeak.dValue = Math.Sqrt(2) * Math.Sqrt(dPower * (Math.Pow(dResistor, 2)+ Math.Pow(dReactance, 2)) / dResistor);
-                //_Irms.dValue = Math.Sqrt(double.Parse(tBox_power.Text)/dResistor);
                 _QueueCalList.Enqueue("dPower");
                 fSearchingParamInFomula();
             }
@@ -411,7 +396,6 @@ namespace singleTypeOutputMatchSimulation
             {
                 tBox_L1.Text = tBox_L1.Text;
 
-                //_CalculatedXl1.dValue = 2 * Math.PI * double.Parse(tBox_frequency.Text) * Math.Pow(10,6) * double.Parse(tBox_L1.Text) * Math.Pow(10,-6);
                 _QueueCalList.Enqueue("dL1");
                 fSearchingParamInFomula();
             }
@@ -432,7 +416,6 @@ namespace singleTypeOutputMatchSimulation
             {
                 tBox_L2.Text = tBox_L2.Text;
 
-                //_CalculatedXl2.dValue = 2 * Math.PI * double.Parse(tBox_frequency.Text) * Math.Pow(10,6) * double.Parse(tBox_L2.Text) * Math.Pow(10, -6);
                 _QueueCalList.Enqueue("dL2");
                 fSearchingParamInFomula();
             }
@@ -454,11 +437,6 @@ namespace singleTypeOutputMatchSimulation
             {
                 tBox_resistor.Text = tBox_resistor.Text;
 
-                //double dPower = double.Parse(tBox_power.Text);
-                //double dResistor = double.Parse(tBox_resistor.Text);
-                //double dReactance = double.Parse(tBox_reactance.Text);
-                //_Vpeak.dValue = Math.Sqrt(2) * Math.Sqrt(dPower * (Math.Pow(dResistor, 2) + Math.Pow(dReactance, 2)) / dResistor);
-                //_Irms.dValue = Math.Sqrt(double.Parse(tBox_power.Text) / dResistor);
                 _QueueCalList.Enqueue("dR");
                 fSearchingParamInFomula();
             }
@@ -480,13 +458,6 @@ namespace singleTypeOutputMatchSimulation
             {
                 tBox_reactance.Text = tBox_reactance.Text;
 
-                //double dfrequency = double.Parse(tBox_frequency.Text);
-                //double dPower = double.Parse(tBox_power.Text);
-                //double dResistor = double.Parse(tBox_resistor.Text);
-                //double dReactance = double.Parse(tBox_reactance.Text);
-                //_Vpeak.dValue = Math.Sqrt(2) * Math.Sqrt(dPower * (Math.Pow(dResistor, 2) + Math.Pow(dReactance, 2)) / dResistor);
-                //_CalculatedC2.dValue = Math.Pow(10,12) * (1/((2*Math.PI* dfrequency * Math.Pow(10,6))*(dReactance-Math.Sqrt((dResistor*(50-dResistor))))));
-                //_TotalLoadX.dValue = _CalculatedXl2.dValue + dReactance;
                 _QueueCalList.Enqueue("dX");
                 fSearchingParamInFomula();
             }

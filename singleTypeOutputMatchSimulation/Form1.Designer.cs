@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_C2Status = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lbl_C2 = new System.Windows.Forms.Label();
@@ -75,16 +75,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_C2Status
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "C2 [pF] - explicit solution";
+            this.lbl_C2Status.AutoSize = true;
+            this.lbl_C2Status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbl_C2Status.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C2Status.Location = new System.Drawing.Point(24, 27);
+            this.lbl_C2Status.Name = "lbl_C2Status";
+            this.lbl_C2Status.Size = new System.Drawing.Size(185, 20);
+            this.lbl_C2Status.TabIndex = 1;
+            this.lbl_C2Status.Text = "C2 [pF] - explicit solution";
             // 
             // tabControl1
             // 
@@ -100,7 +100,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.lbl_C2);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.lbl_C2Status);
             this.tabPage1.Controls.Add(this.lbl_C1);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.tBox_reactance);
@@ -151,9 +151,9 @@
             this.lbl_C2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C2.Location = new System.Drawing.Point(430, 106);
             this.lbl_C2.Name = "lbl_C2";
-            this.lbl_C2.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C2.Size = new System.Drawing.Size(16, 17);
             this.lbl_C2.TabIndex = 161;
-            this.lbl_C2.Text = "V [peak]";
+            this.lbl_C2.Text = "0";
             // 
             // lbl_C1
             // 
@@ -161,9 +161,9 @@
             this.lbl_C1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C1.Location = new System.Drawing.Point(127, 239);
             this.lbl_C1.Name = "lbl_C1";
-            this.lbl_C1.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C1.Size = new System.Drawing.Size(16, 17);
             this.lbl_C1.TabIndex = 160;
-            this.lbl_C1.Text = "V [peak]";
+            this.lbl_C1.Text = "0";
             // 
             // label29
             // 
@@ -209,9 +209,9 @@
             this.lbl_L2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_L2Current.Location = new System.Drawing.Point(656, 140);
             this.lbl_L2Current.Name = "lbl_L2Current";
-            this.lbl_L2Current.Size = new System.Drawing.Size(64, 17);
+            this.lbl_L2Current.Size = new System.Drawing.Size(16, 17);
             this.lbl_L2Current.TabIndex = 157;
-            this.lbl_L2Current.Text = "V [peak]";
+            this.lbl_L2Current.Text = "0";
             // 
             // lbl_L2Voltage
             // 
@@ -219,9 +219,9 @@
             this.lbl_L2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_L2Voltage.Location = new System.Drawing.Point(656, 123);
             this.lbl_L2Voltage.Name = "lbl_L2Voltage";
-            this.lbl_L2Voltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_L2Voltage.Size = new System.Drawing.Size(16, 17);
             this.lbl_L2Voltage.TabIndex = 156;
-            this.lbl_L2Voltage.Text = "V [peak]";
+            this.lbl_L2Voltage.Text = "0";
             // 
             // label25
             // 
@@ -268,9 +268,9 @@
             this.lbl_C2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C2Current.Location = new System.Drawing.Point(430, 140);
             this.lbl_C2Current.Name = "lbl_C2Current";
-            this.lbl_C2Current.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C2Current.Size = new System.Drawing.Size(16, 17);
             this.lbl_C2Current.TabIndex = 152;
-            this.lbl_C2Current.Text = "V [peak]";
+            this.lbl_C2Current.Text = "0";
             // 
             // lbl_C2Voltage
             // 
@@ -278,9 +278,9 @@
             this.lbl_C2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C2Voltage.Location = new System.Drawing.Point(430, 123);
             this.lbl_C2Voltage.Name = "lbl_C2Voltage";
-            this.lbl_C2Voltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C2Voltage.Size = new System.Drawing.Size(16, 17);
             this.lbl_C2Voltage.TabIndex = 151;
-            this.lbl_C2Voltage.Text = "V [peak]";
+            this.lbl_C2Voltage.Text = "0";
             // 
             // label20
             // 
@@ -337,9 +337,9 @@
             this.lbl_sourceCurrent.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sourceCurrent.Location = new System.Drawing.Point(127, 164);
             this.lbl_sourceCurrent.Name = "lbl_sourceCurrent";
-            this.lbl_sourceCurrent.Size = new System.Drawing.Size(64, 17);
+            this.lbl_sourceCurrent.Size = new System.Drawing.Size(16, 17);
             this.lbl_sourceCurrent.TabIndex = 146;
-            this.lbl_sourceCurrent.Text = "V [peak]";
+            this.lbl_sourceCurrent.Text = "0";
             // 
             // lbl_sourceVoltage
             // 
@@ -347,9 +347,9 @@
             this.lbl_sourceVoltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sourceVoltage.Location = new System.Drawing.Point(127, 147);
             this.lbl_sourceVoltage.Name = "lbl_sourceVoltage";
-            this.lbl_sourceVoltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_sourceVoltage.Size = new System.Drawing.Size(16, 17);
             this.lbl_sourceVoltage.TabIndex = 145;
-            this.lbl_sourceVoltage.Text = "V [peak]";
+            this.lbl_sourceVoltage.Text = "0";
             // 
             // label14
             // 
@@ -396,9 +396,9 @@
             this.lbl_C1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C1Current.Location = new System.Drawing.Point(127, 273);
             this.lbl_C1Current.Name = "lbl_C1Current";
-            this.lbl_C1Current.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C1Current.Size = new System.Drawing.Size(16, 17);
             this.lbl_C1Current.TabIndex = 141;
-            this.lbl_C1Current.Text = "V [peak]";
+            this.lbl_C1Current.Text = "0";
             // 
             // lbl_C1Voltage
             // 
@@ -406,9 +406,9 @@
             this.lbl_C1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_C1Voltage.Location = new System.Drawing.Point(127, 256);
             this.lbl_C1Voltage.Name = "lbl_C1Voltage";
-            this.lbl_C1Voltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_C1Voltage.Size = new System.Drawing.Size(16, 17);
             this.lbl_C1Voltage.TabIndex = 140;
-            this.lbl_C1Voltage.Text = "V [peak]";
+            this.lbl_C1Voltage.Text = "0";
             // 
             // label9
             // 
@@ -446,9 +446,9 @@
             this.lbl_L1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_L1Current.Location = new System.Drawing.Point(123, 379);
             this.lbl_L1Current.Name = "lbl_L1Current";
-            this.lbl_L1Current.Size = new System.Drawing.Size(64, 17);
+            this.lbl_L1Current.Size = new System.Drawing.Size(16, 17);
             this.lbl_L1Current.TabIndex = 136;
-            this.lbl_L1Current.Text = "V [peak]";
+            this.lbl_L1Current.Text = "0";
             // 
             // lbl_L1Voltage
             // 
@@ -456,9 +456,9 @@
             this.lbl_L1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_L1Voltage.Location = new System.Drawing.Point(123, 362);
             this.lbl_L1Voltage.Name = "lbl_L1Voltage";
-            this.lbl_L1Voltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_L1Voltage.Size = new System.Drawing.Size(16, 17);
             this.lbl_L1Voltage.TabIndex = 135;
-            this.lbl_L1Voltage.Text = "V [peak]";
+            this.lbl_L1Voltage.Text = "0";
             // 
             // label2
             // 
@@ -549,7 +549,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_C2Status;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label lbl_C2;
