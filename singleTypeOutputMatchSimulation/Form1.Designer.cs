@@ -50,8 +50,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tBox_frequency = new System.Windows.Forms.TextBox();
-            this.lbl_mainCurrent = new System.Windows.Forms.Label();
-            this.lbl_mainVoltage = new System.Windows.Forms.Label();
+            this.lbl_sourceCurrent = new System.Windows.Forms.Label();
+            this.lbl_sourceVoltage = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -119,8 +119,8 @@
             this.tabPage1.Controls.Add(this.label22);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.tBox_frequency);
-            this.tabPage1.Controls.Add(this.lbl_mainCurrent);
-            this.tabPage1.Controls.Add(this.lbl_mainVoltage);
+            this.tabPage1.Controls.Add(this.lbl_sourceCurrent);
+            this.tabPage1.Controls.Add(this.lbl_sourceVoltage);
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.label16);
@@ -181,6 +181,8 @@
             this.tBox_reactance.Name = "tBox_reactance";
             this.tBox_reactance.Size = new System.Drawing.Size(100, 20);
             this.tBox_reactance.TabIndex = 130;
+            this.tBox_reactance.Text = "0";
+            this.tBox_reactance.TextChanged += new System.EventHandler(this.tBox_reactance_TextChanged);
             // 
             // label28
             // 
@@ -198,6 +200,8 @@
             this.tBox_resistor.Name = "tBox_resistor";
             this.tBox_resistor.Size = new System.Drawing.Size(100, 20);
             this.tBox_resistor.TabIndex = 129;
+            this.tBox_resistor.Text = "0";
+            this.tBox_resistor.TextChanged += new System.EventHandler(this.tBox_resistor_TextChanged);
             // 
             // lbl_L2Current
             // 
@@ -255,6 +259,8 @@
             this.tBox_L2.Name = "tBox_L2";
             this.tBox_L2.Size = new System.Drawing.Size(100, 20);
             this.tBox_L2.TabIndex = 128;
+            this.tBox_L2.Text = "0";
+            this.tBox_L2.TextChanged += new System.EventHandler(this.tBox_L2_TextChanged);
             // 
             // lbl_C2Current
             // 
@@ -322,27 +328,28 @@
             this.tBox_frequency.Name = "tBox_frequency";
             this.tBox_frequency.Size = new System.Drawing.Size(95, 20);
             this.tBox_frequency.TabIndex = 125;
+            this.tBox_frequency.Text = "0";
             this.tBox_frequency.TextChanged += new System.EventHandler(this.tBox_frequency_TextChanged);
             // 
-            // lbl_mainCurrent
+            // lbl_sourceCurrent
             // 
-            this.lbl_mainCurrent.AutoSize = true;
-            this.lbl_mainCurrent.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mainCurrent.Location = new System.Drawing.Point(127, 164);
-            this.lbl_mainCurrent.Name = "lbl_mainCurrent";
-            this.lbl_mainCurrent.Size = new System.Drawing.Size(64, 17);
-            this.lbl_mainCurrent.TabIndex = 146;
-            this.lbl_mainCurrent.Text = "V [peak]";
+            this.lbl_sourceCurrent.AutoSize = true;
+            this.lbl_sourceCurrent.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sourceCurrent.Location = new System.Drawing.Point(127, 164);
+            this.lbl_sourceCurrent.Name = "lbl_sourceCurrent";
+            this.lbl_sourceCurrent.Size = new System.Drawing.Size(64, 17);
+            this.lbl_sourceCurrent.TabIndex = 146;
+            this.lbl_sourceCurrent.Text = "V [peak]";
             // 
-            // lbl_mainVoltage
+            // lbl_sourceVoltage
             // 
-            this.lbl_mainVoltage.AutoSize = true;
-            this.lbl_mainVoltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mainVoltage.Location = new System.Drawing.Point(127, 147);
-            this.lbl_mainVoltage.Name = "lbl_mainVoltage";
-            this.lbl_mainVoltage.Size = new System.Drawing.Size(64, 17);
-            this.lbl_mainVoltage.TabIndex = 145;
-            this.lbl_mainVoltage.Text = "V [peak]";
+            this.lbl_sourceVoltage.AutoSize = true;
+            this.lbl_sourceVoltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sourceVoltage.Location = new System.Drawing.Point(127, 147);
+            this.lbl_sourceVoltage.Name = "lbl_sourceVoltage";
+            this.lbl_sourceVoltage.Size = new System.Drawing.Size(64, 17);
+            this.lbl_sourceVoltage.TabIndex = 145;
+            this.lbl_sourceVoltage.Text = "V [peak]";
             // 
             // label14
             // 
@@ -380,6 +387,8 @@
             this.tBox_power.Name = "tBox_power";
             this.tBox_power.Size = new System.Drawing.Size(95, 20);
             this.tBox_power.TabIndex = 126;
+            this.tBox_power.Text = "0";
+            this.tBox_power.TextChanged += new System.EventHandler(this.tBox_power_TextChanged);
             // 
             // lbl_C1Current
             // 
@@ -487,6 +496,8 @@
             this.tBox_L1.Name = "tBox_L1";
             this.tBox_L1.Size = new System.Drawing.Size(96, 20);
             this.tBox_L1.TabIndex = 127;
+            this.tBox_L1.Text = "0";
+            this.tBox_L1.TextChanged += new System.EventHandler(this.tBox_L1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -560,8 +571,8 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox tBox_frequency;
-        private System.Windows.Forms.Label lbl_mainCurrent;
-        private System.Windows.Forms.Label lbl_mainVoltage;
+        private System.Windows.Forms.Label lbl_sourceCurrent;
+        private System.Windows.Forms.Label lbl_sourceVoltage;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
