@@ -63,6 +63,76 @@ namespace singleTypeOutputMatchSimulation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _Naura__dual_output_3 {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__dual_output_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__dual_output_4 {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__dual_output_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__dual_output_4__ {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__dual_output_4__", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__dual_output_4___ {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__dual_output_4___", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__Dual_Output_image {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__Dual_Output_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__Dual_Output_image_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__Dual_Output_image_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Naura__dual_output2 {
+            get {
+                object obj = ResourceManager.GetObject("_Naura__dual_output2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap interactive {
             get {
                 object obj = ResourceManager.GetObject("interactive", resourceCulture);

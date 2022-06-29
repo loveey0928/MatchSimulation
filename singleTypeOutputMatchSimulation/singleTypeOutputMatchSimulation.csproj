@@ -142,5 +142,26 @@
   <ItemGroup>
     <None Include="Resources\interactive.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Naura__Dual_Output_image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] Dual Output image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] dual output2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] dual output 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] dual output 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] dual output 4__.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[Naura] dual output 4___.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
