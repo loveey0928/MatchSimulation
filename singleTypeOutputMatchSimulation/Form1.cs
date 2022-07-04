@@ -257,6 +257,11 @@ namespace singleTypeOutputMatchSimulation
             return value.ToString();
         }
 
+        public double fMathRoundToDouble(double value)
+        {
+            return Math.Round(value, 2);
+        }
+
         public void fParameterValueReset(string sQueueFrontMostElement)
         {
             double dfrequency = double.Parse(tBox_frequency.Text);
@@ -446,7 +451,14 @@ namespace singleTypeOutputMatchSimulation
 
             //====================================================================================
             public Complex comInVar_Z_InnerPart = new Complex(0, 0); //
+            //====================================================================================
+            public double dCurrentRatio = 0;
 
+            public double dC5Start_forCurrentRatioEtcCal = 0;
+            public double dC5End_forCurrentRatioEtcCal = 0;
+            public double dC5Interval_forCurrentRatioEtcCal = 0;
+
+            public DataTable dtCalculatedCurrentRatioEtc = new DataTable();
             //===================Power============================================================
             public List<string> lSourceVrms = new List<string> { "Power" };
             public List<string> lSourceIrms = new List<string> { "Power" };
@@ -497,7 +509,7 @@ namespace singleTypeOutputMatchSimulation
             public List<string> lOuterPower = new List<string> { "OuterPhase", "OuterArms" , "OuterVpeak" };//
 
             public List<string> lInnerArms = new List<string> { "InnerVpeak", "InVar_Z_InnerPart" };//
-            public List<string> lInnerVpeak = new List<string> { "Vpeak_C4" };//
+            public List<string> lInnerVpeak = new List<string> { "Vpeak_C5" };//
             public List<string> lInnerPhase = new List<string> { "InnerR", "InnerXl" };//
             public List<string> lInnerPower = new List<string> { "InnerArms", "InnerPhase", "InnerVpeak" };//
 
@@ -512,7 +524,7 @@ namespace singleTypeOutputMatchSimulation
 
             public List<string> lInnerV_R = new List<string> { "InnerArms", "InnerR" };
             public List<string> lInnerV_L = new List<string> { "InnerArms", "InnerXl" };
-
+            public List<string> lCurrentRatio = new List<string> { "InnerArms", "OuterArms" };
         }
         public void fSearchingParamInFomula_Std_L_Type_DualOutput_for_NauraMatch()
         {
@@ -713,6 +725,10 @@ namespace singleTypeOutputMatchSimulation
                 if (nauraMatch.lInnerV_L.Contains(sQueueFrontMostElement))
                 {
                     nauraMatch.QueueCalList.Enqueue("InnerV_L");
+                }
+                if (nauraMatch.lCurrentRatio.Contains(sQueueFrontMostElement))
+                {
+                    nauraMatch.QueueCalList.Enqueue("CurrentRatio");
                 }
                 #endregion
                 fParameterValueReset_Std_L_Type_DualOutput_for_NauraMatch(sQueueFrontMostElement);
@@ -957,6 +973,12 @@ namespace singleTypeOutputMatchSimulation
                     lbl_singleFreqDualOutput_InnerL_Vpeak.Text = fMathRoundToString(nauraMatch.dInnerV_L);
                     break;
 
+                case "CurrentRatio":
+                    nauraMatch.dCurrentRatio = nauraMatch.dOuterArms / (nauraMatch.dInnerArms + nauraMatch.dOuterArms);
+                    //Console.WriteLine(nauraMatch.dCurrentRatio);
+                    lbl_singleFreqDualOutput_currentRatio.Text = fMathRoundToString(nauraMatch.dCurrentRatio);
+                    break;
+
             }
         }
 
@@ -969,6 +991,17 @@ namespace singleTypeOutputMatchSimulation
             #region for_Naura
             lbl_singleFreqDualOutput_C2Status.Text = "C2 [pF] - No explicit solution exists. You should add on L2 inductance level";
             lbl_singleFreqDualOutput_C2Status.BackColor = Color.Tomato;
+
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("C5[%]",typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("CurrentRatio",typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("V_Outer", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("I_Outer", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("Power_Outer", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("Phase_Outer", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("V_Inner", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("I_Inner", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("Power_Inner", typeof(double));
+            nauraMatch.dtCalculatedCurrentRatioEtc.Columns.Add("Phase_Inner", typeof(double));
 
             nauraMatch.dFrequency = double.Parse(tBox_singleFreqDualOutput_frequency.Text);
             nauraMatch.dPower = double.Parse(tBox_singleFreqDualOutput_power.Text);
@@ -1396,6 +1429,39 @@ namespace singleTypeOutputMatchSimulation
                 MessageBox.Show("Please input real number to Frequency"); //
             }
         }
+
+        private void btn_singleFreqDualOutput_currentRatioCal_Click(object sender, EventArgs e)
+        {
+            nauraMatch.dtCalculatedCurrentRatioEtc.Clear();
+
+            nauraMatch.dC5Start_forCurrentRatioEtcCal = double.Parse(tbox_singleFreqDualOutput_C5Start.Text);
+            nauraMatch.dC5Interval_forCurrentRatioEtcCal= double.Parse(tbox_singleFreqDualOutput_C5Interval.Text);
+            nauraMatch.dC5End_forCurrentRatioEtcCal = double.Parse(tbox_singleFreqDualOutput_C5End.Text);
+
+            for (double i = nauraMatch.dC5Start_forCurrentRatioEtcCal; i <= nauraMatch.dC5End_forCurrentRatioEtcCal; i = i + nauraMatch.dC5Interval_forCurrentRatioEtcCal)
+            { 
+                tBox_singleFreqDualOutput_C5_percent.Text = i.ToString();
+                DataRow dtRowCurrentRow = nauraMatch.dtCalculatedCurrentRatioEtc.NewRow();
+                dtRowCurrentRow["C5[%]"] = fMathRoundToDouble(nauraMatch.dC5_percent);
+                dtRowCurrentRow["CurrentRatio"] = fMathRoundToDouble(nauraMatch.dCurrentRatio);
+                dtRowCurrentRow["V_Outer"] = fMathRoundToDouble(nauraMatch.dOuterVpeak);
+                dtRowCurrentRow["I_Outer"] = fMathRoundToDouble(nauraMatch.dOuterArms);
+                dtRowCurrentRow["Power_Outer"] = fMathRoundToDouble(nauraMatch.dOuterPower);
+                dtRowCurrentRow["Phase_Outer"] = fMathRoundToDouble(nauraMatch.dOuterPhase);
+                dtRowCurrentRow["V_Inner"] = fMathRoundToDouble(nauraMatch.dInnerVpeak);
+                dtRowCurrentRow["I_Inner"] = fMathRoundToDouble(nauraMatch.dInnerArms);
+                dtRowCurrentRow["Power_Inner"] = fMathRoundToDouble(nauraMatch.dInnerPower);
+                dtRowCurrentRow["Phase_Inner"] = fMathRoundToDouble(nauraMatch.dInnerPhase);
+
+                nauraMatch.dtCalculatedCurrentRatioEtc.Rows.Add(dtRowCurrentRow);
+            }
+
+            dgv_CalculatedCurrentRatioEtc.DataSource = null;
+            dgv_CalculatedCurrentRatioEtc.DataSource = nauraMatch.dtCalculatedCurrentRatioEtc;
+            dgv_CalculatedCurrentRatioEtc.AutoResizeColumns();
+            dgv_CalculatedCurrentRatioEtc.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+        }
         #endregion
+
     }
 }

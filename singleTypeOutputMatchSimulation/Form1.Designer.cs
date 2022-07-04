@@ -30,45 +30,6 @@
         {
             this.lbl__C2Status = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lbl_C2 = new System.Windows.Forms.Label();
-            this.lbl_C1 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.tBox_reactance = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.tBox_resistor = new System.Windows.Forms.TextBox();
-            this.lbl_L2Current = new System.Windows.Forms.Label();
-            this.lbl_L2Voltage = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.tBox_L2 = new System.Windows.Forms.TextBox();
-            this.lbl_C2Current = new System.Windows.Forms.Label();
-            this.lbl_C2Voltage = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tBox_frequency = new System.Windows.Forms.TextBox();
-            this.lbl_sourceCurrent = new System.Windows.Forms.Label();
-            this.lbl_sourceVoltage = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tBox_power = new System.Windows.Forms.TextBox();
-            this.lbl_C1Current = new System.Windows.Forms.Label();
-            this.lbl_C1Voltage = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lbl_L1Current = new System.Windows.Forms.Label();
-            this.lbl_L1Voltage = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tBox_L1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lbl_singleFreqDualOutput_Arms_C4 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -158,11 +119,61 @@
             this.label35 = new System.Windows.Forms.Label();
             this.tBox_singleFreqDualOutput_L1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lbl_C2 = new System.Windows.Forms.Label();
+            this.lbl_C1 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tBox_reactance = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tBox_resistor = new System.Windows.Forms.TextBox();
+            this.lbl_L2Current = new System.Windows.Forms.Label();
+            this.lbl_L2Voltage = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.tBox_L2 = new System.Windows.Forms.TextBox();
+            this.lbl_C2Current = new System.Windows.Forms.Label();
+            this.lbl_C2Voltage = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tBox_frequency = new System.Windows.Forms.TextBox();
+            this.lbl_sourceCurrent = new System.Windows.Forms.Label();
+            this.lbl_sourceVoltage = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tBox_power = new System.Windows.Forms.TextBox();
+            this.lbl_C1Current = new System.Windows.Forms.Label();
+            this.lbl_C1Voltage = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_L1Current = new System.Windows.Forms.Label();
+            this.lbl_L1Voltage = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tBox_L1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tbox_singleFreqDualOutput_C5Interval = new System.Windows.Forms.TextBox();
+            this.tbox_singleFreqDualOutput_C5Start = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.tbox_singleFreqDualOutput_C5End = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgv_CalculatedCurrentRatioEtc = new System.Windows.Forms.DataGridView();
+            this.btn_singleFreqDualOutput_currentRatioCal = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CalculatedCurrentRatioEtc)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl__C2Status
@@ -186,427 +197,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1425, 583);
             this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.lbl_C2);
-            this.tabPage1.Controls.Add(this.lbl__C2Status);
-            this.tabPage1.Controls.Add(this.lbl_C1);
-            this.tabPage1.Controls.Add(this.label29);
-            this.tabPage1.Controls.Add(this.tBox_reactance);
-            this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.tBox_resistor);
-            this.tabPage1.Controls.Add(this.lbl_L2Current);
-            this.tabPage1.Controls.Add(this.lbl_L2Voltage);
-            this.tabPage1.Controls.Add(this.label25);
-            this.tabPage1.Controls.Add(this.label26);
-            this.tabPage1.Controls.Add(this.label27);
-            this.tabPage1.Controls.Add(this.tBox_L2);
-            this.tabPage1.Controls.Add(this.lbl_C2Current);
-            this.tabPage1.Controls.Add(this.lbl_C2Voltage);
-            this.tabPage1.Controls.Add(this.label20);
-            this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.label22);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.tBox_frequency);
-            this.tabPage1.Controls.Add(this.lbl_sourceCurrent);
-            this.tabPage1.Controls.Add(this.lbl_sourceVoltage);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.tBox_power);
-            this.tabPage1.Controls.Add(this.lbl_C1Current);
-            this.tabPage1.Controls.Add(this.lbl_C1Voltage);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.lbl_L1Current);
-            this.tabPage1.Controls.Add(this.lbl_L1Voltage);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.tBox_L1);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1417, 557);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Single std L-type";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // lbl_C2
-            // 
-            this.lbl_C2.AutoSize = true;
-            this.lbl_C2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C2.Location = new System.Drawing.Point(430, 106);
-            this.lbl_C2.Name = "lbl_C2";
-            this.lbl_C2.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C2.TabIndex = 161;
-            this.lbl_C2.Text = "0";
-            // 
-            // lbl_C1
-            // 
-            this.lbl_C1.AutoSize = true;
-            this.lbl_C1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C1.Location = new System.Drawing.Point(127, 239);
-            this.lbl_C1.Name = "lbl_C1";
-            this.lbl_C1.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C1.TabIndex = 160;
-            this.lbl_C1.Text = "0";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(837, 329);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(50, 17);
-            this.label29.TabIndex = 159;
-            this.label29.Text = "x [Ω] :";
-            // 
-            // tBox_reactance
-            // 
-            this.tBox_reactance.Location = new System.Drawing.Point(898, 328);
-            this.tBox_reactance.Name = "tBox_reactance";
-            this.tBox_reactance.Size = new System.Drawing.Size(100, 20);
-            this.tBox_reactance.TabIndex = 130;
-            this.tBox_reactance.Text = "0";
-            this.tBox_reactance.TextChanged += new System.EventHandler(this.tBox_reactance_TextChanged);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(837, 239);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(49, 17);
-            this.label28.TabIndex = 158;
-            this.label28.Text = "r [Ω] :";
-            // 
-            // tBox_resistor
-            // 
-            this.tBox_resistor.Location = new System.Drawing.Point(898, 238);
-            this.tBox_resistor.Name = "tBox_resistor";
-            this.tBox_resistor.Size = new System.Drawing.Size(100, 20);
-            this.tBox_resistor.TabIndex = 129;
-            this.tBox_resistor.Text = "0";
-            this.tBox_resistor.TextChanged += new System.EventHandler(this.tBox_resistor_TextChanged);
-            // 
-            // lbl_L2Current
-            // 
-            this.lbl_L2Current.AutoSize = true;
-            this.lbl_L2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_L2Current.Location = new System.Drawing.Point(656, 140);
-            this.lbl_L2Current.Name = "lbl_L2Current";
-            this.lbl_L2Current.Size = new System.Drawing.Size(16, 17);
-            this.lbl_L2Current.TabIndex = 157;
-            this.lbl_L2Current.Text = "0";
-            // 
-            // lbl_L2Voltage
-            // 
-            this.lbl_L2Voltage.AutoSize = true;
-            this.lbl_L2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_L2Voltage.Location = new System.Drawing.Point(656, 123);
-            this.lbl_L2Voltage.Name = "lbl_L2Voltage";
-            this.lbl_L2Voltage.Size = new System.Drawing.Size(16, 17);
-            this.lbl_L2Voltage.TabIndex = 156;
-            this.lbl_L2Voltage.Text = "0";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(575, 140);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(61, 17);
-            this.label25.TabIndex = 155;
-            this.label25.Text = "I [rms] :";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(563, 123);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(73, 17);
-            this.label26.TabIndex = 154;
-            this.label26.Text = "V [peak] :";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(570, 103);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(66, 17);
-            this.label27.TabIndex = 153;
-            this.label27.Text = "L2 [µH] :";
-            // 
-            // tBox_L2
-            // 
-            this.tBox_L2.Location = new System.Drawing.Point(642, 103);
-            this.tBox_L2.Name = "tBox_L2";
-            this.tBox_L2.Size = new System.Drawing.Size(100, 20);
-            this.tBox_L2.TabIndex = 128;
-            this.tBox_L2.Text = "0";
-            this.tBox_L2.TextChanged += new System.EventHandler(this.tBox_L2_TextChanged);
-            // 
-            // lbl_C2Current
-            // 
-            this.lbl_C2Current.AutoSize = true;
-            this.lbl_C2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C2Current.Location = new System.Drawing.Point(430, 140);
-            this.lbl_C2Current.Name = "lbl_C2Current";
-            this.lbl_C2Current.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C2Current.TabIndex = 152;
-            this.lbl_C2Current.Text = "0";
-            // 
-            // lbl_C2Voltage
-            // 
-            this.lbl_C2Voltage.AutoSize = true;
-            this.lbl_C2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C2Voltage.Location = new System.Drawing.Point(430, 123);
-            this.lbl_C2Voltage.Name = "lbl_C2Voltage";
-            this.lbl_C2Voltage.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C2Voltage.TabIndex = 151;
-            this.lbl_C2Voltage.Text = "0";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(357, 140);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 17);
-            this.label20.TabIndex = 150;
-            this.label20.Text = "I [rms] :";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(345, 123);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(73, 17);
-            this.label21.TabIndex = 149;
-            this.label21.Text = "V [peak] :";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(353, 106);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 17);
-            this.label22.TabIndex = 148;
-            this.label22.Text = "C2 [pF] :";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(19, 106);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 17);
-            this.label17.TabIndex = 147;
-            this.label17.Text = "Freq [MHz] :";
-            // 
-            // tBox_frequency
-            // 
-            this.tBox_frequency.Location = new System.Drawing.Point(114, 106);
-            this.tBox_frequency.Name = "tBox_frequency";
-            this.tBox_frequency.Size = new System.Drawing.Size(95, 20);
-            this.tBox_frequency.TabIndex = 125;
-            this.tBox_frequency.Text = "0";
-            this.tBox_frequency.TextChanged += new System.EventHandler(this.tBox_frequency_TextChanged);
-            // 
-            // lbl_sourceCurrent
-            // 
-            this.lbl_sourceCurrent.AutoSize = true;
-            this.lbl_sourceCurrent.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sourceCurrent.Location = new System.Drawing.Point(127, 164);
-            this.lbl_sourceCurrent.Name = "lbl_sourceCurrent";
-            this.lbl_sourceCurrent.Size = new System.Drawing.Size(16, 17);
-            this.lbl_sourceCurrent.TabIndex = 146;
-            this.lbl_sourceCurrent.Text = "0";
-            // 
-            // lbl_sourceVoltage
-            // 
-            this.lbl_sourceVoltage.AutoSize = true;
-            this.lbl_sourceVoltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sourceVoltage.Location = new System.Drawing.Point(127, 147);
-            this.lbl_sourceVoltage.Name = "lbl_sourceVoltage";
-            this.lbl_sourceVoltage.Size = new System.Drawing.Size(16, 17);
-            this.lbl_sourceVoltage.TabIndex = 145;
-            this.lbl_sourceVoltage.Text = "0";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(50, 164);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 17);
-            this.label14.TabIndex = 144;
-            this.label14.Text = "I [rms] :";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(45, 147);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 17);
-            this.label15.TabIndex = 143;
-            this.label15.Text = "V [rms] :";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(25, 127);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(86, 17);
-            this.label16.TabIndex = 142;
-            this.label16.Text = "Power [W] :";
-            // 
-            // tBox_power
-            // 
-            this.tBox_power.Location = new System.Drawing.Point(114, 127);
-            this.tBox_power.Name = "tBox_power";
-            this.tBox_power.Size = new System.Drawing.Size(95, 20);
-            this.tBox_power.TabIndex = 126;
-            this.tBox_power.Text = "0";
-            this.tBox_power.TextChanged += new System.EventHandler(this.tBox_power_TextChanged);
-            // 
-            // lbl_C1Current
-            // 
-            this.lbl_C1Current.AutoSize = true;
-            this.lbl_C1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C1Current.Location = new System.Drawing.Point(127, 273);
-            this.lbl_C1Current.Name = "lbl_C1Current";
-            this.lbl_C1Current.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C1Current.TabIndex = 141;
-            this.lbl_C1Current.Text = "0";
-            // 
-            // lbl_C1Voltage
-            // 
-            this.lbl_C1Voltage.AutoSize = true;
-            this.lbl_C1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_C1Voltage.Location = new System.Drawing.Point(127, 256);
-            this.lbl_C1Voltage.Name = "lbl_C1Voltage";
-            this.lbl_C1Voltage.Size = new System.Drawing.Size(16, 17);
-            this.lbl_C1Voltage.TabIndex = 140;
-            this.lbl_C1Voltage.Text = "0";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(50, 273);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 17);
-            this.label9.TabIndex = 139;
-            this.label9.Text = "I [rms] :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 256);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 17);
-            this.label10.TabIndex = 138;
-            this.label10.Text = "V [peak] :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(46, 239);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 17);
-            this.label11.TabIndex = 137;
-            this.label11.Text = "C1 [pF] :";
-            // 
-            // lbl_L1Current
-            // 
-            this.lbl_L1Current.AutoSize = true;
-            this.lbl_L1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_L1Current.Location = new System.Drawing.Point(123, 379);
-            this.lbl_L1Current.Name = "lbl_L1Current";
-            this.lbl_L1Current.Size = new System.Drawing.Size(16, 17);
-            this.lbl_L1Current.TabIndex = 136;
-            this.lbl_L1Current.Text = "0";
-            // 
-            // lbl_L1Voltage
-            // 
-            this.lbl_L1Voltage.AutoSize = true;
-            this.lbl_L1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_L1Voltage.Location = new System.Drawing.Point(123, 362);
-            this.lbl_L1Voltage.Name = "lbl_L1Voltage";
-            this.lbl_L1Voltage.Size = new System.Drawing.Size(16, 17);
-            this.lbl_L1Voltage.TabIndex = 135;
-            this.lbl_L1Voltage.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 380);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
-            this.label2.TabIndex = 134;
-            this.label2.Text = "I [rms] :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 362);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
-            this.label4.TabIndex = 133;
-            this.label4.Text = "V [peak] :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 342);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
-            this.label3.TabIndex = 132;
-            this.label3.Text = "L1 [µH] :";
-            // 
-            // tBox_L1
-            // 
-            this.tBox_L1.Location = new System.Drawing.Point(113, 342);
-            this.tBox_L1.Name = "tBox_L1";
-            this.tBox_L1.Size = new System.Drawing.Size(96, 20);
-            this.tBox_L1.TabIndex = 127;
-            this.tBox_L1.Text = "0";
-            this.tBox_L1.TextChanged += new System.EventHandler(this.tBox_L1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::singleTypeOutputMatchSimulation.Properties.Resources.L_type_output_image_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(666, 368);
-            this.pictureBox1.TabIndex = 131;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1417, 557);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Single inverted L-type";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -720,11 +310,11 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(804, 140);
+            this.label52.Location = new System.Drawing.Point(809, 140);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(90, 17);
+            this.label52.Size = new System.Drawing.Size(93, 17);
             this.label52.TabIndex = 252;
-            this.label52.Text = "V_C [Arms] :";
+            this.label52.Text = "I_C4 [Arms] :";
             // 
             // lbl_singleFreqDualOutput_Vpeak_C4
             // 
@@ -742,15 +332,15 @@
             this.label54.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(797, 121);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(97, 17);
+            this.label54.Size = new System.Drawing.Size(105, 17);
             this.label54.TabIndex = 250;
-            this.label54.Text = "V_C [Vpeak] :";
+            this.label54.Text = "V_C4 [Vpeak] :";
             // 
             // lbl_singleFreqDualOutput_Arms_C5
             // 
             this.lbl_singleFreqDualOutput_Arms_C5.AutoSize = true;
             this.lbl_singleFreqDualOutput_Arms_C5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_Arms_C5.Location = new System.Drawing.Point(1099, 288);
+            this.lbl_singleFreqDualOutput_Arms_C5.Location = new System.Drawing.Point(1103, 288);
             this.lbl_singleFreqDualOutput_Arms_C5.Name = "lbl_singleFreqDualOutput_Arms_C5";
             this.lbl_singleFreqDualOutput_Arms_C5.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_Arms_C5.TabIndex = 249;
@@ -760,17 +350,17 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(1009, 287);
+            this.label43.Location = new System.Drawing.Point(1012, 287);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(90, 17);
+            this.label43.Size = new System.Drawing.Size(93, 17);
             this.label43.TabIndex = 248;
-            this.label43.Text = "V_C [Arms] :";
+            this.label43.Text = "I_C5 [Arms] :";
             // 
             // lbl_singleFreqDualOutput_Vpeak_C5
             // 
             this.lbl_singleFreqDualOutput_Vpeak_C5.AutoSize = true;
             this.lbl_singleFreqDualOutput_Vpeak_C5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_Vpeak_C5.Location = new System.Drawing.Point(1099, 269);
+            this.lbl_singleFreqDualOutput_Vpeak_C5.Location = new System.Drawing.Point(1103, 269);
             this.lbl_singleFreqDualOutput_Vpeak_C5.Name = "lbl_singleFreqDualOutput_Vpeak_C5";
             this.lbl_singleFreqDualOutput_Vpeak_C5.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_Vpeak_C5.TabIndex = 247;
@@ -780,15 +370,15 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(1002, 268);
+            this.label42.Location = new System.Drawing.Point(1000, 268);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(97, 17);
+            this.label42.Size = new System.Drawing.Size(105, 17);
             this.label42.TabIndex = 246;
-            this.label42.Text = "V_C [Vpeak] :";
+            this.label42.Text = "V_C5 [Vpeak] :";
             // 
             // tBox_singleFreqDualOutput_targetVVC
             // 
-            this.tBox_singleFreqDualOutput_targetVVC.Location = new System.Drawing.Point(1099, 222);
+            this.tBox_singleFreqDualOutput_targetVVC.Location = new System.Drawing.Point(1104, 222);
             this.tBox_singleFreqDualOutput_targetVVC.Name = "tBox_singleFreqDualOutput_targetVVC";
             this.tBox_singleFreqDualOutput_targetVVC.Size = new System.Drawing.Size(62, 20);
             this.tBox_singleFreqDualOutput_targetVVC.TabIndex = 8;
@@ -799,7 +389,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(1008, 223);
+            this.label38.Location = new System.Drawing.Point(1014, 223);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(90, 17);
             this.label38.TabIndex = 244;
@@ -809,7 +399,7 @@
             // 
             this.lbl_singleFreqDualOutput_currentRatio.AutoSize = true;
             this.lbl_singleFreqDualOutput_currentRatio.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_currentRatio.Location = new System.Drawing.Point(1077, 536);
+            this.lbl_singleFreqDualOutput_currentRatio.Location = new System.Drawing.Point(1109, 536);
             this.lbl_singleFreqDualOutput_currentRatio.Name = "lbl_singleFreqDualOutput_currentRatio";
             this.lbl_singleFreqDualOutput_currentRatio.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_currentRatio.TabIndex = 243;
@@ -819,7 +409,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(772, 535);
+            this.label37.Location = new System.Drawing.Point(804, 535);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(314, 17);
             this.label37.TabIndex = 242;
@@ -1098,7 +688,7 @@
             // 
             // tBox_singleFreqDualOutput_C5_percent
             // 
-            this.tBox_singleFreqDualOutput_C5_percent.Location = new System.Drawing.Point(1100, 247);
+            this.tBox_singleFreqDualOutput_C5_percent.Location = new System.Drawing.Point(1104, 247);
             this.tBox_singleFreqDualOutput_C5_percent.Name = "tBox_singleFreqDualOutput_C5_percent";
             this.tBox_singleFreqDualOutput_C5_percent.Size = new System.Drawing.Size(62, 20);
             this.tBox_singleFreqDualOutput_C5_percent.TabIndex = 9;
@@ -1109,7 +699,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(1037, 247);
+            this.label57.Location = new System.Drawing.Point(1043, 247);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(61, 17);
             this.label57.TabIndex = 213;
@@ -1117,7 +707,7 @@
             // 
             // tBox_singleFreqDualOutput_C4pF
             // 
-            this.tBox_singleFreqDualOutput_C4pF.Location = new System.Drawing.Point(900, 158);
+            this.tBox_singleFreqDualOutput_C4pF.Location = new System.Drawing.Point(903, 158);
             this.tBox_singleFreqDualOutput_C4pF.Name = "tBox_singleFreqDualOutput_C4pF";
             this.tBox_singleFreqDualOutput_C4pF.Size = new System.Drawing.Size(78, 20);
             this.tBox_singleFreqDualOutput_C4pF.TabIndex = 7;
@@ -1128,7 +718,7 @@
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(829, 158);
+            this.label56.Location = new System.Drawing.Point(836, 158);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(65, 17);
             this.label56.TabIndex = 211;
@@ -1570,11 +1160,517 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::singleTypeOutputMatchSimulation.Properties.Resources._Naura__dual_output_4___;
-            this.pictureBox2.Location = new System.Drawing.Point(190, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(189, 80);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1124, 378);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.lbl_C2);
+            this.tabPage1.Controls.Add(this.lbl__C2Status);
+            this.tabPage1.Controls.Add(this.lbl_C1);
+            this.tabPage1.Controls.Add(this.label29);
+            this.tabPage1.Controls.Add(this.tBox_reactance);
+            this.tabPage1.Controls.Add(this.label28);
+            this.tabPage1.Controls.Add(this.tBox_resistor);
+            this.tabPage1.Controls.Add(this.lbl_L2Current);
+            this.tabPage1.Controls.Add(this.lbl_L2Voltage);
+            this.tabPage1.Controls.Add(this.label25);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.tBox_L2);
+            this.tabPage1.Controls.Add(this.lbl_C2Current);
+            this.tabPage1.Controls.Add(this.lbl_C2Voltage);
+            this.tabPage1.Controls.Add(this.label20);
+            this.tabPage1.Controls.Add(this.label21);
+            this.tabPage1.Controls.Add(this.label22);
+            this.tabPage1.Controls.Add(this.label17);
+            this.tabPage1.Controls.Add(this.tBox_frequency);
+            this.tabPage1.Controls.Add(this.lbl_sourceCurrent);
+            this.tabPage1.Controls.Add(this.lbl_sourceVoltage);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.label16);
+            this.tabPage1.Controls.Add(this.tBox_power);
+            this.tabPage1.Controls.Add(this.lbl_C1Current);
+            this.tabPage1.Controls.Add(this.lbl_C1Voltage);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.label10);
+            this.tabPage1.Controls.Add(this.label11);
+            this.tabPage1.Controls.Add(this.lbl_L1Current);
+            this.tabPage1.Controls.Add(this.lbl_L1Voltage);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.tBox_L1);
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1417, 557);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Single std L-type";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lbl_C2
+            // 
+            this.lbl_C2.AutoSize = true;
+            this.lbl_C2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C2.Location = new System.Drawing.Point(430, 106);
+            this.lbl_C2.Name = "lbl_C2";
+            this.lbl_C2.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C2.TabIndex = 161;
+            this.lbl_C2.Text = "0";
+            // 
+            // lbl_C1
+            // 
+            this.lbl_C1.AutoSize = true;
+            this.lbl_C1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C1.Location = new System.Drawing.Point(127, 239);
+            this.lbl_C1.Name = "lbl_C1";
+            this.lbl_C1.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C1.TabIndex = 160;
+            this.lbl_C1.Text = "0";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(837, 329);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(50, 17);
+            this.label29.TabIndex = 159;
+            this.label29.Text = "x [Ω] :";
+            // 
+            // tBox_reactance
+            // 
+            this.tBox_reactance.Location = new System.Drawing.Point(898, 328);
+            this.tBox_reactance.Name = "tBox_reactance";
+            this.tBox_reactance.Size = new System.Drawing.Size(100, 20);
+            this.tBox_reactance.TabIndex = 130;
+            this.tBox_reactance.Text = "0";
+            this.tBox_reactance.TextChanged += new System.EventHandler(this.tBox_reactance_TextChanged);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(837, 239);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(49, 17);
+            this.label28.TabIndex = 158;
+            this.label28.Text = "r [Ω] :";
+            // 
+            // tBox_resistor
+            // 
+            this.tBox_resistor.Location = new System.Drawing.Point(898, 238);
+            this.tBox_resistor.Name = "tBox_resistor";
+            this.tBox_resistor.Size = new System.Drawing.Size(100, 20);
+            this.tBox_resistor.TabIndex = 129;
+            this.tBox_resistor.Text = "0";
+            this.tBox_resistor.TextChanged += new System.EventHandler(this.tBox_resistor_TextChanged);
+            // 
+            // lbl_L2Current
+            // 
+            this.lbl_L2Current.AutoSize = true;
+            this.lbl_L2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_L2Current.Location = new System.Drawing.Point(656, 140);
+            this.lbl_L2Current.Name = "lbl_L2Current";
+            this.lbl_L2Current.Size = new System.Drawing.Size(16, 17);
+            this.lbl_L2Current.TabIndex = 157;
+            this.lbl_L2Current.Text = "0";
+            // 
+            // lbl_L2Voltage
+            // 
+            this.lbl_L2Voltage.AutoSize = true;
+            this.lbl_L2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_L2Voltage.Location = new System.Drawing.Point(656, 123);
+            this.lbl_L2Voltage.Name = "lbl_L2Voltage";
+            this.lbl_L2Voltage.Size = new System.Drawing.Size(16, 17);
+            this.lbl_L2Voltage.TabIndex = 156;
+            this.lbl_L2Voltage.Text = "0";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(575, 140);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(61, 17);
+            this.label25.TabIndex = 155;
+            this.label25.Text = "I [rms] :";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(563, 123);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(73, 17);
+            this.label26.TabIndex = 154;
+            this.label26.Text = "V [peak] :";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(570, 103);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(66, 17);
+            this.label27.TabIndex = 153;
+            this.label27.Text = "L2 [µH] :";
+            // 
+            // tBox_L2
+            // 
+            this.tBox_L2.Location = new System.Drawing.Point(642, 103);
+            this.tBox_L2.Name = "tBox_L2";
+            this.tBox_L2.Size = new System.Drawing.Size(100, 20);
+            this.tBox_L2.TabIndex = 128;
+            this.tBox_L2.Text = "0";
+            this.tBox_L2.TextChanged += new System.EventHandler(this.tBox_L2_TextChanged);
+            // 
+            // lbl_C2Current
+            // 
+            this.lbl_C2Current.AutoSize = true;
+            this.lbl_C2Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C2Current.Location = new System.Drawing.Point(430, 140);
+            this.lbl_C2Current.Name = "lbl_C2Current";
+            this.lbl_C2Current.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C2Current.TabIndex = 152;
+            this.lbl_C2Current.Text = "0";
+            // 
+            // lbl_C2Voltage
+            // 
+            this.lbl_C2Voltage.AutoSize = true;
+            this.lbl_C2Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C2Voltage.Location = new System.Drawing.Point(430, 123);
+            this.lbl_C2Voltage.Name = "lbl_C2Voltage";
+            this.lbl_C2Voltage.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C2Voltage.TabIndex = 151;
+            this.lbl_C2Voltage.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(357, 140);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 17);
+            this.label20.TabIndex = 150;
+            this.label20.Text = "I [rms] :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(345, 123);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(73, 17);
+            this.label21.TabIndex = 149;
+            this.label21.Text = "V [peak] :";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(353, 106);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 17);
+            this.label22.TabIndex = 148;
+            this.label22.Text = "C2 [pF] :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(19, 106);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 17);
+            this.label17.TabIndex = 147;
+            this.label17.Text = "Freq [MHz] :";
+            // 
+            // tBox_frequency
+            // 
+            this.tBox_frequency.Location = new System.Drawing.Point(114, 106);
+            this.tBox_frequency.Name = "tBox_frequency";
+            this.tBox_frequency.Size = new System.Drawing.Size(95, 20);
+            this.tBox_frequency.TabIndex = 125;
+            this.tBox_frequency.Text = "0";
+            this.tBox_frequency.TextChanged += new System.EventHandler(this.tBox_frequency_TextChanged);
+            // 
+            // lbl_sourceCurrent
+            // 
+            this.lbl_sourceCurrent.AutoSize = true;
+            this.lbl_sourceCurrent.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sourceCurrent.Location = new System.Drawing.Point(127, 164);
+            this.lbl_sourceCurrent.Name = "lbl_sourceCurrent";
+            this.lbl_sourceCurrent.Size = new System.Drawing.Size(16, 17);
+            this.lbl_sourceCurrent.TabIndex = 146;
+            this.lbl_sourceCurrent.Text = "0";
+            // 
+            // lbl_sourceVoltage
+            // 
+            this.lbl_sourceVoltage.AutoSize = true;
+            this.lbl_sourceVoltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sourceVoltage.Location = new System.Drawing.Point(127, 147);
+            this.lbl_sourceVoltage.Name = "lbl_sourceVoltage";
+            this.lbl_sourceVoltage.Size = new System.Drawing.Size(16, 17);
+            this.lbl_sourceVoltage.TabIndex = 145;
+            this.lbl_sourceVoltage.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(50, 164);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 17);
+            this.label14.TabIndex = 144;
+            this.label14.Text = "I [rms] :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(45, 147);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 17);
+            this.label15.TabIndex = 143;
+            this.label15.Text = "V [rms] :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(25, 127);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(86, 17);
+            this.label16.TabIndex = 142;
+            this.label16.Text = "Power [W] :";
+            // 
+            // tBox_power
+            // 
+            this.tBox_power.Location = new System.Drawing.Point(114, 127);
+            this.tBox_power.Name = "tBox_power";
+            this.tBox_power.Size = new System.Drawing.Size(95, 20);
+            this.tBox_power.TabIndex = 126;
+            this.tBox_power.Text = "0";
+            this.tBox_power.TextChanged += new System.EventHandler(this.tBox_power_TextChanged);
+            // 
+            // lbl_C1Current
+            // 
+            this.lbl_C1Current.AutoSize = true;
+            this.lbl_C1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C1Current.Location = new System.Drawing.Point(127, 273);
+            this.lbl_C1Current.Name = "lbl_C1Current";
+            this.lbl_C1Current.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C1Current.TabIndex = 141;
+            this.lbl_C1Current.Text = "0";
+            // 
+            // lbl_C1Voltage
+            // 
+            this.lbl_C1Voltage.AutoSize = true;
+            this.lbl_C1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_C1Voltage.Location = new System.Drawing.Point(127, 256);
+            this.lbl_C1Voltage.Name = "lbl_C1Voltage";
+            this.lbl_C1Voltage.Size = new System.Drawing.Size(16, 17);
+            this.lbl_C1Voltage.TabIndex = 140;
+            this.lbl_C1Voltage.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(50, 273);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 17);
+            this.label9.TabIndex = 139;
+            this.label9.Text = "I [rms] :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(38, 256);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 17);
+            this.label10.TabIndex = 138;
+            this.label10.Text = "V [peak] :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(46, 239);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 17);
+            this.label11.TabIndex = 137;
+            this.label11.Text = "C1 [pF] :";
+            // 
+            // lbl_L1Current
+            // 
+            this.lbl_L1Current.AutoSize = true;
+            this.lbl_L1Current.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_L1Current.Location = new System.Drawing.Point(123, 379);
+            this.lbl_L1Current.Name = "lbl_L1Current";
+            this.lbl_L1Current.Size = new System.Drawing.Size(16, 17);
+            this.lbl_L1Current.TabIndex = 136;
+            this.lbl_L1Current.Text = "0";
+            // 
+            // lbl_L1Voltage
+            // 
+            this.lbl_L1Voltage.AutoSize = true;
+            this.lbl_L1Voltage.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_L1Voltage.Location = new System.Drawing.Point(123, 362);
+            this.lbl_L1Voltage.Name = "lbl_L1Voltage";
+            this.lbl_L1Voltage.Size = new System.Drawing.Size(16, 17);
+            this.lbl_L1Voltage.TabIndex = 135;
+            this.lbl_L1Voltage.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(48, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 17);
+            this.label2.TabIndex = 134;
+            this.label2.Text = "I [rms] :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(36, 362);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 17);
+            this.label4.TabIndex = 133;
+            this.label4.Text = "V [peak] :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(43, 342);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.TabIndex = 132;
+            this.label3.Text = "L1 [µH] :";
+            // 
+            // tBox_L1
+            // 
+            this.tBox_L1.Location = new System.Drawing.Point(113, 342);
+            this.tBox_L1.Name = "tBox_L1";
+            this.tBox_L1.Size = new System.Drawing.Size(96, 20);
+            this.tBox_L1.TabIndex = 127;
+            this.tBox_L1.Text = "0";
+            this.tBox_L1.TextChanged += new System.EventHandler(this.tBox_L1_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::singleTypeOutputMatchSimulation.Properties.Resources.L_type_output_image_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(179, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(666, 368);
+            this.pictureBox1.TabIndex = 131;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1417, 557);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Single inverted L-type";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tbox_singleFreqDualOutput_C5Interval
+            // 
+            this.tbox_singleFreqDualOutput_C5Interval.Location = new System.Drawing.Point(112, 46);
+            this.tbox_singleFreqDualOutput_C5Interval.Name = "tbox_singleFreqDualOutput_C5Interval";
+            this.tbox_singleFreqDualOutput_C5Interval.Size = new System.Drawing.Size(61, 20);
+            this.tbox_singleFreqDualOutput_C5Interval.TabIndex = 1;
+            this.tbox_singleFreqDualOutput_C5Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbox_singleFreqDualOutput_C5Start
+            // 
+            this.tbox_singleFreqDualOutput_C5Start.Location = new System.Drawing.Point(10, 45);
+            this.tbox_singleFreqDualOutput_C5Start.Name = "tbox_singleFreqDualOutput_C5Start";
+            this.tbox_singleFreqDualOutput_C5Start.Size = new System.Drawing.Size(63, 20);
+            this.tbox_singleFreqDualOutput_C5Start.TabIndex = 0;
+            this.tbox_singleFreqDualOutput_C5Start.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(10, 30);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(62, 13);
+            this.label53.TabIndex = 4;
+            this.label53.Text = "C5 Start [%]";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(202, 30);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(59, 13);
+            this.label59.TabIndex = 5;
+            this.label59.Text = "C5 End [%]";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(113, 31);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(59, 13);
+            this.label60.TabIndex = 6;
+            this.label60.Text = "Interval [%]";
+            // 
+            // tbox_singleFreqDualOutput_C5End
+            // 
+            this.tbox_singleFreqDualOutput_C5End.Location = new System.Drawing.Point(203, 45);
+            this.tbox_singleFreqDualOutput_C5End.Name = "tbox_singleFreqDualOutput_C5End";
+            this.tbox_singleFreqDualOutput_C5End.Size = new System.Drawing.Size(58, 20);
+            this.tbox_singleFreqDualOutput_C5End.TabIndex = 2;
+            this.tbox_singleFreqDualOutput_C5End.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_singleFreqDualOutput_currentRatioCal);
+            this.groupBox1.Controls.Add(this.tbox_singleFreqDualOutput_C5Start);
+            this.groupBox1.Controls.Add(this.tbox_singleFreqDualOutput_C5End);
+            this.groupBox1.Controls.Add(this.label59);
+            this.groupBox1.Controls.Add(this.label53);
+            this.groupBox1.Controls.Add(this.label60);
+            this.groupBox1.Controls.Add(this.tbox_singleFreqDualOutput_C5Interval);
+            this.groupBox1.Location = new System.Drawing.Point(1481, 58);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(267, 100);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Changing C5 [%]  →  Cal Current Ratio etc";
+            // 
+            // dgv_CalculatedCurrentRatioEtc
+            // 
+            this.dgv_CalculatedCurrentRatioEtc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CalculatedCurrentRatioEtc.Location = new System.Drawing.Point(1481, 168);
+            this.dgv_CalculatedCurrentRatioEtc.Name = "dgv_CalculatedCurrentRatioEtc";
+            this.dgv_CalculatedCurrentRatioEtc.Size = new System.Drawing.Size(343, 451);
+            this.dgv_CalculatedCurrentRatioEtc.TabIndex = 9;
+            // 
+            // btn_singleFreqDualOutput_currentRatioCal
+            // 
+            this.btn_singleFreqDualOutput_currentRatioCal.Location = new System.Drawing.Point(93, 71);
+            this.btn_singleFreqDualOutput_currentRatioCal.Name = "btn_singleFreqDualOutput_currentRatioCal";
+            this.btn_singleFreqDualOutput_currentRatioCal.Size = new System.Drawing.Size(99, 23);
+            this.btn_singleFreqDualOutput_currentRatioCal.TabIndex = 8;
+            this.btn_singleFreqDualOutput_currentRatioCal.Text = "Calculation";
+            this.btn_singleFreqDualOutput_currentRatioCal.UseVisualStyleBackColor = true;
+            this.btn_singleFreqDualOutput_currentRatioCal.Click += new System.EventHandler(this.btn_singleFreqDualOutput_currentRatioCal_Click);
             // 
             // Form1
             // 
@@ -1585,19 +1681,24 @@
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1474, 651);
+            this.ClientSize = new System.Drawing.Size(1855, 651);
+            this.Controls.Add(this.dgv_CalculatedCurrentRatioEtc);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Match Simulation ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CalculatedCurrentRatioEtc)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1733,6 +1834,15 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label lbl_singleFreqDualOutput_Vpeak_C4;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox tbox_singleFreqDualOutput_C5Interval;
+        private System.Windows.Forms.TextBox tbox_singleFreqDualOutput_C5Start;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox tbox_singleFreqDualOutput_C5End;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgv_CalculatedCurrentRatioEtc;
+        private System.Windows.Forms.Button btn_singleFreqDualOutput_currentRatioCal;
     }
 }
 
