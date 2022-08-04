@@ -431,7 +431,7 @@ namespace singleTypeOutputMatchSimulation
             public double dVpeak_C4 = 0;
             public double dArms_C4 = 0;
 
-            public double dInVar_correctionFactor = 32;
+            public double dInVar_correctionFactor = 0;
             public double dInVar_C5pF_plus_CorrectionFactor = 0;
             public double dInVar_SizeOfX_C5 = 0;
             //public Complex comInVar_Z_C5 = new Complex(0, 0);
@@ -1015,8 +1015,6 @@ namespace singleTypeOutputMatchSimulation
             nauraMatch.dInnerR = double.Parse(tBox_singleFreqDualOutput_InnerR.Text);
             nauraMatch.dInnerXl = double.Parse(tBox_singleFreqDualOutput_InnerXl.Text);
             nauraMatch.dTargetVVC = double.Parse(tBox_singleFreqDualOutput_targetVVC.Text);
-            nauraMatch.QueueCalList.Enqueue("Frequency");
-            nauraMatch.QueueCalList.Enqueue("Power");
             nauraMatch.QueueCalList.Enqueue("L1");
             nauraMatch.QueueCalList.Enqueue("L2");
             nauraMatch.QueueCalList.Enqueue("OuterR");
@@ -1027,6 +1025,9 @@ namespace singleTypeOutputMatchSimulation
             nauraMatch.QueueCalList.Enqueue("InnerR");
             nauraMatch.QueueCalList.Enqueue("InnerXl");
             nauraMatch.QueueCalList.Enqueue("TargetVVC");
+            nauraMatch.QueueCalList.Enqueue("Frequency");
+            nauraMatch.QueueCalList.Enqueue("Power");
+
             fSearchingParamInFomula_Std_L_Type_DualOutput_for_NauraMatch();
             #endregion
         }

@@ -165,8 +165,8 @@
             this.label60 = new System.Windows.Forms.Label();
             this.tbox_singleFreqDualOutput_C5End = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgv_CalculatedCurrentRatioEtc = new System.Windows.Forms.DataGridView();
             this.btn_singleFreqDualOutput_currentRatioCal = new System.Windows.Forms.Button();
+            this.dgv_CalculatedCurrentRatioEtc = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -382,7 +382,7 @@
             this.tBox_singleFreqDualOutput_targetVVC.Name = "tBox_singleFreqDualOutput_targetVVC";
             this.tBox_singleFreqDualOutput_targetVVC.Size = new System.Drawing.Size(62, 20);
             this.tBox_singleFreqDualOutput_targetVVC.TabIndex = 8;
-            this.tBox_singleFreqDualOutput_targetVVC.Text = "250";
+            this.tBox_singleFreqDualOutput_targetVVC.Text = "500";
             this.tBox_singleFreqDualOutput_targetVVC.TextChanged += new System.EventHandler(this.tBox_singleFreqDualOutput_targetVVC_TextChanged);
             // 
             // label38
@@ -590,7 +590,7 @@
             // 
             this.lbl_singleFreqDualOutput_InnerL_Vpeak.AutoSize = true;
             this.lbl_singleFreqDualOutput_InnerL_Vpeak.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_InnerL_Vpeak.Location = new System.Drawing.Point(1134, 366);
+            this.lbl_singleFreqDualOutput_InnerL_Vpeak.Location = new System.Drawing.Point(1131, 366);
             this.lbl_singleFreqDualOutput_InnerL_Vpeak.Name = "lbl_singleFreqDualOutput_InnerL_Vpeak";
             this.lbl_singleFreqDualOutput_InnerL_Vpeak.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_InnerL_Vpeak.TabIndex = 224;
@@ -600,7 +600,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(1038, 366);
+            this.label65.Location = new System.Drawing.Point(1037, 366);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(95, 17);
             this.label65.TabIndex = 223;
@@ -610,7 +610,7 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(1032, 345);
+            this.label63.Location = new System.Drawing.Point(1031, 345);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(101, 17);
             this.label63.TabIndex = 222;
@@ -618,7 +618,7 @@
             // 
             // tBox_singleFreqDualOutput_InnerXl
             // 
-            this.tBox_singleFreqDualOutput_InnerXl.Location = new System.Drawing.Point(1133, 345);
+            this.tBox_singleFreqDualOutput_InnerXl.Location = new System.Drawing.Point(1132, 345);
             this.tBox_singleFreqDualOutput_InnerXl.Name = "tBox_singleFreqDualOutput_InnerXl";
             this.tBox_singleFreqDualOutput_InnerXl.Size = new System.Drawing.Size(53, 20);
             this.tBox_singleFreqDualOutput_InnerXl.TabIndex = 10;
@@ -1654,14 +1654,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Changing C5 [%]  →  Cal Current Ratio etc";
             // 
-            // dgv_CalculatedCurrentRatioEtc
-            // 
-            this.dgv_CalculatedCurrentRatioEtc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_CalculatedCurrentRatioEtc.Location = new System.Drawing.Point(1481, 168);
-            this.dgv_CalculatedCurrentRatioEtc.Name = "dgv_CalculatedCurrentRatioEtc";
-            this.dgv_CalculatedCurrentRatioEtc.Size = new System.Drawing.Size(343, 451);
-            this.dgv_CalculatedCurrentRatioEtc.TabIndex = 9;
-            // 
             // btn_singleFreqDualOutput_currentRatioCal
             // 
             this.btn_singleFreqDualOutput_currentRatioCal.Location = new System.Drawing.Point(93, 71);
@@ -1671,6 +1663,14 @@
             this.btn_singleFreqDualOutput_currentRatioCal.Text = "Calculation";
             this.btn_singleFreqDualOutput_currentRatioCal.UseVisualStyleBackColor = true;
             this.btn_singleFreqDualOutput_currentRatioCal.Click += new System.EventHandler(this.btn_singleFreqDualOutput_currentRatioCal_Click);
+            // 
+            // dgv_CalculatedCurrentRatioEtc
+            // 
+            this.dgv_CalculatedCurrentRatioEtc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CalculatedCurrentRatioEtc.Location = new System.Drawing.Point(1481, 168);
+            this.dgv_CalculatedCurrentRatioEtc.Name = "dgv_CalculatedCurrentRatioEtc";
+            this.dgv_CalculatedCurrentRatioEtc.Size = new System.Drawing.Size(343, 451);
+            this.dgv_CalculatedCurrentRatioEtc.TabIndex = 9;
             // 
             // Form1
             // 
