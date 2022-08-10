@@ -195,12 +195,14 @@
             this.tabControl1.Location = new System.Drawing.Point(24, 36);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1425, 583);
+            this.tabControl1.Size = new System.Drawing.Size(1819, 603);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dgv_CalculatedCurrentRatioEtc);
             this.tabPage3.Controls.Add(this.lbl_singleFreqDualOutput_Arms_C4);
+            this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.label52);
             this.tabPage3.Controls.Add(this.lbl_singleFreqDualOutput_Vpeak_C4);
             this.tabPage3.Controls.Add(this.label54);
@@ -291,7 +293,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1417, 557);
+            this.tabPage3.Size = new System.Drawing.Size(1811, 577);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Naura Dual output Match";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -340,7 +342,7 @@
             // 
             this.lbl_singleFreqDualOutput_Arms_C5.AutoSize = true;
             this.lbl_singleFreqDualOutput_Arms_C5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_Arms_C5.Location = new System.Drawing.Point(1103, 288);
+            this.lbl_singleFreqDualOutput_Arms_C5.Location = new System.Drawing.Point(1104, 288);
             this.lbl_singleFreqDualOutput_Arms_C5.Name = "lbl_singleFreqDualOutput_Arms_C5";
             this.lbl_singleFreqDualOutput_Arms_C5.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_Arms_C5.TabIndex = 249;
@@ -350,7 +352,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(1012, 287);
+            this.label43.Location = new System.Drawing.Point(1014, 287);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(93, 17);
             this.label43.TabIndex = 248;
@@ -360,7 +362,7 @@
             // 
             this.lbl_singleFreqDualOutput_Vpeak_C5.AutoSize = true;
             this.lbl_singleFreqDualOutput_Vpeak_C5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_singleFreqDualOutput_Vpeak_C5.Location = new System.Drawing.Point(1103, 269);
+            this.lbl_singleFreqDualOutput_Vpeak_C5.Location = new System.Drawing.Point(1104, 269);
             this.lbl_singleFreqDualOutput_Vpeak_C5.Name = "lbl_singleFreqDualOutput_Vpeak_C5";
             this.lbl_singleFreqDualOutput_Vpeak_C5.Size = new System.Drawing.Size(16, 17);
             this.lbl_singleFreqDualOutput_Vpeak_C5.TabIndex = 247;
@@ -370,7 +372,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(1000, 268);
+            this.label42.Location = new System.Drawing.Point(1002, 268);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(105, 17);
             this.label42.TabIndex = 246;
@@ -378,7 +380,7 @@
             // 
             // tBox_singleFreqDualOutput_targetVVC
             // 
-            this.tBox_singleFreqDualOutput_targetVVC.Location = new System.Drawing.Point(1104, 222);
+            this.tBox_singleFreqDualOutput_targetVVC.Location = new System.Drawing.Point(1107, 222);
             this.tBox_singleFreqDualOutput_targetVVC.Name = "tBox_singleFreqDualOutput_targetVVC";
             this.tBox_singleFreqDualOutput_targetVVC.Size = new System.Drawing.Size(62, 20);
             this.tBox_singleFreqDualOutput_targetVVC.TabIndex = 8;
@@ -389,11 +391,11 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(1014, 223);
+            this.label38.Location = new System.Drawing.Point(987, 223);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(90, 17);
+            this.label38.Size = new System.Drawing.Size(121, 17);
             this.label38.TabIndex = 244;
-            this.label38.Text = "target VVC :";
+            this.label38.Text = "target VVC [pF] :";
             // 
             // lbl_singleFreqDualOutput_currentRatio
             // 
@@ -688,7 +690,7 @@
             // 
             // tBox_singleFreqDualOutput_C5_percent
             // 
-            this.tBox_singleFreqDualOutput_C5_percent.Location = new System.Drawing.Point(1104, 247);
+            this.tBox_singleFreqDualOutput_C5_percent.Location = new System.Drawing.Point(1106, 247);
             this.tBox_singleFreqDualOutput_C5_percent.Name = "tBox_singleFreqDualOutput_C5_percent";
             this.tBox_singleFreqDualOutput_C5_percent.Size = new System.Drawing.Size(62, 20);
             this.tBox_singleFreqDualOutput_C5_percent.TabIndex = 9;
@@ -699,7 +701,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(1043, 247);
+            this.label57.Location = new System.Drawing.Point(1046, 247);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(61, 17);
             this.label57.TabIndex = 213;
@@ -1209,7 +1211,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1417, 557);
+            this.tabPage1.Size = new System.Drawing.Size(1811, 577);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Single std L-type";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1582,7 +1584,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1417, 557);
+            this.tabPage2.Size = new System.Drawing.Size(1811, 577);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Single inverted L-type";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1594,6 +1596,7 @@
             this.tbox_singleFreqDualOutput_C5Interval.Size = new System.Drawing.Size(61, 20);
             this.tbox_singleFreqDualOutput_C5Interval.TabIndex = 1;
             this.tbox_singleFreqDualOutput_C5Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbox_singleFreqDualOutput_C5Interval.TextChanged += new System.EventHandler(this.tbox_singleFreqDualOutput_C5Interval_TextChanged);
             // 
             // tbox_singleFreqDualOutput_C5Start
             // 
@@ -1602,6 +1605,7 @@
             this.tbox_singleFreqDualOutput_C5Start.Size = new System.Drawing.Size(63, 20);
             this.tbox_singleFreqDualOutput_C5Start.TabIndex = 0;
             this.tbox_singleFreqDualOutput_C5Start.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbox_singleFreqDualOutput_C5Start.TextChanged += new System.EventHandler(this.tbox_singleFreqDualOutput_C5Start_TextChanged);
             // 
             // label53
             // 
@@ -1637,6 +1641,7 @@
             this.tbox_singleFreqDualOutput_C5End.Size = new System.Drawing.Size(58, 20);
             this.tbox_singleFreqDualOutput_C5End.TabIndex = 2;
             this.tbox_singleFreqDualOutput_C5End.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbox_singleFreqDualOutput_C5End.TextChanged += new System.EventHandler(this.tbox_singleFreqDualOutput_C5End_TextChanged);
             // 
             // groupBox1
             // 
@@ -1647,7 +1652,7 @@
             this.groupBox1.Controls.Add(this.label53);
             this.groupBox1.Controls.Add(this.label60);
             this.groupBox1.Controls.Add(this.tbox_singleFreqDualOutput_C5Interval);
-            this.groupBox1.Location = new System.Drawing.Point(1481, 58);
+            this.groupBox1.Location = new System.Drawing.Point(1459, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(267, 100);
             this.groupBox1.TabIndex = 8;
@@ -1667,7 +1672,7 @@
             // dgv_CalculatedCurrentRatioEtc
             // 
             this.dgv_CalculatedCurrentRatioEtc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_CalculatedCurrentRatioEtc.Location = new System.Drawing.Point(1481, 168);
+            this.dgv_CalculatedCurrentRatioEtc.Location = new System.Drawing.Point(1459, 120);
             this.dgv_CalculatedCurrentRatioEtc.Name = "dgv_CalculatedCurrentRatioEtc";
             this.dgv_CalculatedCurrentRatioEtc.Size = new System.Drawing.Size(343, 451);
             this.dgv_CalculatedCurrentRatioEtc.TabIndex = 9;
@@ -1682,8 +1687,6 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1855, 651);
-            this.Controls.Add(this.dgv_CalculatedCurrentRatioEtc);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.KeyPreview = true;
             this.Name = "Form1";

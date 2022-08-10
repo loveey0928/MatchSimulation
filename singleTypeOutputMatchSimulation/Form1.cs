@@ -394,6 +394,7 @@ namespace singleTypeOutputMatchSimulation
             public double dL2Vpeak = 0;
             public double dL2Irms = 0;
             //====================================================================================
+            public double dC1 = 0;
             public double dInVar_CalculatedC1 = 0;
             public double dInVar_CalculatedXc1 = 0;
             public double dInVar_Xc1PlusXl1 = 0;
@@ -472,7 +473,8 @@ namespace singleTypeOutputMatchSimulation
             public List<string> lL2Vpeak = new List<string> { "L2Irms", "InVar_CalculatedX_L2" };//
             public List<string> lL2Irms = new List<string> { "InVar_Itotal" };//
 
-            public List<string> lInVar_CalculatedC1 = new List<string> { "Frequency", "InVar_Z_total" };//
+            public List<string> lC1 = new List<string> { "Frequency" , "InVar_Xc1PlusXl1" };
+            public List<string> lInVar_CalculatedC1 = new List<string> { "Frequency", "InVar_Z_total" };
             public List<string> lInVar_CalculatedXc1 = new List<string> { "Frequency", "InVar_CalculatedC1" };//
             public List<string> lInVar_Xc1PlusXl1 = new List<string> { "InVar_CalculatedXc1", "InVar_CalculatedXl1" };//
 
@@ -573,6 +575,10 @@ namespace singleTypeOutputMatchSimulation
                 if (nauraMatch.lL2Irms.Contains(sQueueFrontMostElement))
                 {
                     nauraMatch.QueueCalList.Enqueue("L2Irms");
+                }
+                if (nauraMatch.lC1.Contains(sQueueFrontMostElement))
+                {
+                    nauraMatch.QueueCalList.Enqueue("C1");
                 }
                 if (nauraMatch.lInVar_CalculatedC1.Contains(sQueueFrontMostElement))
                 {
@@ -798,10 +804,12 @@ namespace singleTypeOutputMatchSimulation
                     lbl_singleFreqDualOutput_L2_Irms.Text = fMathRoundToString(nauraMatch.dL2Irms);//
                     break;
 
-
+                case "C1":
+                    nauraMatch.dC1 = Math.Pow(10, 12) * (1 / (2 * Math.PI * nauraMatch.dFrequency * Math.Pow(10, 6) * nauraMatch.dInVar_Xc1PlusXl1  ));
+                    lbl_singleFreqDualOutput_C1.Text = fMathRoundToString(nauraMatch.dC1);//
+                    break;
                 case "InVar_CalculatedC1":
-                    nauraMatch.dInVar_CalculatedC1 = Math.Pow(10, 12) * (1 / (50 * 2 * Math.PI * nauraMatch.dFrequency * Math.Pow(10, 6)) * Math.Sqrt((50 - nauraMatch.comInVar_Z_total.Real) / nauraMatch.comInVar_Z_total.Real));//
-                    lbl_singleFreqDualOutput_C1.Text = fMathRoundToString(nauraMatch.dInVar_CalculatedC1);//
+                    nauraMatch.dInVar_CalculatedC1 = Math.Pow(10, 12) * (1 / (50 * 2 * Math.PI * nauraMatch.dFrequency * Math.Pow(10, 6)) * Math.Sqrt((50 - nauraMatch.comInVar_Z_total.Real) / nauraMatch.comInVar_Z_total.Real));
                     break;
                 case "InVar_CalculatedXc1":
                     nauraMatch.dInVar_CalculatedXc1 = 1 / (2 * Math.PI * nauraMatch.dFrequency * Math.Pow(10, 6) * nauraMatch.dInVar_CalculatedC1 * Math.Pow(10, -12));//
@@ -1464,5 +1472,49 @@ namespace singleTypeOutputMatchSimulation
         }
         #endregion
 
+        double dC5Start = 0;
+        private void tbox_singleFreqDualOutput_C5Start_TextChanged(object sender, EventArgs e)
+        {
+            if (tbox_singleFreqDualOutput_C5Start.Text.EndsWith("."))
+            {
+                ;
+            }
+            else if (!String.IsNullOrEmpty(tbox_singleFreqDualOutput_C5Start.Text) && Double.TryParse(tbox_singleFreqDualOutput_C5Start.Text, out dC5Start) == false)
+            {
+                //Console.WriteLine(nauraMatch.dFrequency.ToString());
+                MessageBox.Show("Please input real number to C5 Start[%]"); //
+            }
+
+        }
+
+        double dInterval = 0;
+        private void tbox_singleFreqDualOutput_C5Interval_TextChanged(object sender, EventArgs e)
+        {
+            if (tbox_singleFreqDualOutput_C5Interval.Text.EndsWith("."))
+            {
+                ;
+            }
+            else if (!String.IsNullOrEmpty(tbox_singleFreqDualOutput_C5Interval.Text) && Double.TryParse(tbox_singleFreqDualOutput_C5Interval.Text, out dInterval) == false)
+            {
+                //Console.WriteLine(nauraMatch.dFrequency.ToString());
+                MessageBox.Show("Please input real number to Interval[%]"); //
+            }
+
+        }
+
+        double dC5End = 0;
+        private void tbox_singleFreqDualOutput_C5End_TextChanged(object sender, EventArgs e)
+        {
+            if (tbox_singleFreqDualOutput_C5End.Text.EndsWith("."))
+            {
+                ;
+            }
+            else if (!String.IsNullOrEmpty(tbox_singleFreqDualOutput_C5End.Text) && Double.TryParse(tbox_singleFreqDualOutput_C5End.Text, out dC5End) == false)
+            {
+                //Console.WriteLine(nauraMatch.dFrequency.ToString());
+                MessageBox.Show("Please input real number to C5 End[%]"); //
+            }
+
+        }
     }
 }
